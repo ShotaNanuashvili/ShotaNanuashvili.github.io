@@ -260,10 +260,16 @@ header {
 }
 
 .meals-showcase li {
+    margin-right: 0.3%;
+    margin-bottom: 0.3%;
     display: block;
     float: left;
-    width: 25%;
+    width: 24.75%;
 }
+.meals-showcase li:last-child {
+    margin-right: 0;
+}
+
 
 .meal-photo {
     width: 100%;
