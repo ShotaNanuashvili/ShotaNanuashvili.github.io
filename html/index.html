@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>You thirsty?</title>
+    <link rel="stylesheet" href="/dist/style/main.css">
+    <link rel="stylesheet" href="/dist/style/fonts.css">
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <div class="logo">
+                <img src="/dist/images/logo.png" alt="logo">
+                <h2>Explore The World Of Cocktails</h2>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li>Services</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li class="favourites">
+                        <i class="material-icons-outlined">favorite_border</i>
+                        <span>4</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search">
+            <h3>Search</h3>
+            <form>
+                <div class="autocomplete">
+                    <input type="text" name="name" placeholder="Cocktail Name" autocomplete="off">
+                </div>
+                <div class="select categories">
+                    <div class="title">
+                        <div class="control">Categories</div>
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="options">
+                    </div>
+                </div>
+                <div class="select glass-types">
+                    <div class="title">
+                        <div class="control">Glass</div>
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="options">
+                    </div>
+                </div>
+                <div class="select alcohol-types">
+                    <div class="title">
+                        <div class="control">Alcohol</div>
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="options">
+                    </div>
+                </div>
+                <div class="select ingredients">
+                    <div class="title">
+                        <div class="control">Ingredients</div>
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="options">
+                    </div>
+                </div>
+                <div class="btn-outlined submit">Search</div>
+            </form>
+        </div>
+        <div class="results">
+            <h2>Results</h2>
+            <ul class="list">
+            </ul>
+        </div>
+        <div class="popup details">
+            <div class="popup-header">
+                <i class="material-icons">close</i>
+            </div>
+            <div class="content">
+                <div class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Instructions</h3>
+                    <p></p>
+                </div>
+                <div class="description">
+                    <h3>Description</h3>
+                    <ul>
+                        <li id="desc-category">
+                            <span class="name">Category</span>
+                            <span class="value"></span>
+                        </li>
+                        <li id="desc-glass">
+                            <span class="name">Glass</span>
+                            <span class="value"></span>
+                        </li>
+                        <li id="desc-alcohol">
+                            <span class="name">Alcohol</span>
+                            <span class="value"></span>
+                        </li>
+                        <li id="desc-tags">
+                            <span class="name">Tags</span>
+                            <span class="value"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.4/polyfill.js" />
+        <script src="/dist/scripts/names.js"></script>
+        <script src="/dist/scripts/requests.js"></script>
+        <script src="/dist/scripts/main.js"></script>
+    </footer>
+</body>
+
+</html>
